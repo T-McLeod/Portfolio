@@ -1,0 +1,7 @@
+*.tsx text
+*.ts text
+*.css text
+*.html text
+*.json text
+*.js text
+*.svg binary
