@@ -1,0 +1,48 @@
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me {
+  margin: 20px 0;
+}
+
+.headshot {
+  width: 150px;
+  height: 200px;
+  margin: 20px;
+}
+
+.header-text {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.skills, .projects, .contact {
+  margin: 20px 0;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.projects, .contact {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+}
