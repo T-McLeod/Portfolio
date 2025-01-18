@@ -1,16 +1,19 @@
 import React from 'react';
 import './Home.css';
+import headshot from '../assets/Tanner_McLeod_Headshot.jpg';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
       <header className="home-header">
-        <h1>Tanner McLeod</h1>
-        <p>Failure is simply the opportunity to begin again, this time more intelligently.</p>
+        <img src={headshot} alt="Tanner's Headshot" className="headshot" />
+        <div className="header-text">
+          <h1>Tanner McLeod</h1>
+          <p>Failure is simply the opportunity to begin again, this time more intelligently.</p>
+        </div>
       </header>
       <section className="about-me">
         <h2>About Me</h2>
-        <img src="../assets/react.svg" alt="Tanner's Headshot" className="headshot" />
         <p>
           Hi, I'm Tanner, a passionate software engineering student with a love for developing innovative solutions. 
           I have experience in JavaScript, React, TypeScript, CSS, and Node.js. I'm always eager to learn new technologies 
