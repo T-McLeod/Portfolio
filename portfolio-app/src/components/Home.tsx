@@ -1,16 +1,13 @@
 import React from 'react';
+import Projects from './Projects';
 import './Home.css';
-import headshot from '../assets/Tanner_McLeod_Headshot.jpg';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
       <header className="home-header">
-        <img src={headshot} alt="Tanner's Headshot" className="headshot" />
-        <div className="header-text">
-          <h1>Tanner McLeod</h1>
-          <p>Failure is simply the opportunity to begin again, this time more intelligently.</p>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Failure is simply the opportunity to begin again, this time more intelligently.</p>
       </header>
       <section className="about-me">
         <h2>About Me</h2>
@@ -31,14 +28,11 @@ const Home: React.FC = () => {
         </ul>
       </section>
       <section className="projects">
-        <h2>Projects</h2>
-        <p>Check out some of my projects below:</p>
-        {/* Add project links or descriptions here */}
+        <Projects />
       </section>
       <section className="contact">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out!</p>
-        {/* Add contact form or email link here */}
       </section>
     </div>
   );
