@@ -1,0 +1,20 @@
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
