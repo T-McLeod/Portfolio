@@ -5,14 +5,14 @@ import './Projects.css';
 const Projects: React.FC = () => {
   const projectList = [
     {
-      title: 'Project One',
-      description: 'This is a description of project one.',
-      link: 'https://example.com/project-one'
+      title: 'Doordash Tracker',
+      description: 'Track offers given by doordash (from dasher perspective) and estimate the time required to complete trip. Intended to be used to calculate the most efficient offers to accept.',
+      link: 'https://github.com/T-McLeod/DoordashTracker'
     },
     {
-      title: 'Project Two',
-      description: 'This is a description of project two.',
-      link: 'https://example.com/project-two'
+      title: 'Chess Project',
+      description: 'A Java app to play Chess locally on computer.',
+      link: 'https://github.com/T-McLeod/ChessProject'
     },
     // Add more projects as needed
   ];
