@@ -2,6 +2,7 @@ import React from 'react';
 import Projects from './Projects';
 import './Home.css';
 import headshot from '../assets/Tanner_McLeod_Headshot.jpg';
+import Contact from './Contact';
 
 const Home: React.FC = () => {
   return (
@@ -35,8 +36,7 @@ const Home: React.FC = () => {
         <Projects />
       </section>
       <section className="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <Contact />
       </section>
     </div>
   );
