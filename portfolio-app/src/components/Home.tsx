@@ -1,4 +1,5 @@
 import React from 'react';
+import Projects from './Projects';
 import './Home.css';
 import headshot from '../assets/Tanner_McLeod_Headshot.jpg';
 
@@ -31,14 +32,11 @@ const Home: React.FC = () => {
         </ul>
       </section>
       <section className="projects">
-        <h2>Projects</h2>
-        <p>Check out some of my projects below:</p>
-        {/* Add project links or descriptions here */}
+        <Projects />
       </section>
       <section className="contact">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out!</p>
-        {/* Add contact form or email link here */}
       </section>
     </div>
   );
