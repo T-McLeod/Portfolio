@@ -1,6 +1,10 @@
 .navbar {
   background-color: #333;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -8,6 +12,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 .navbar li {
