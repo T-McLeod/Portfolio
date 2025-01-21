@@ -5,8 +5,8 @@
 Here are some example issues to get you started (feel free to break them up into smaller issues as your project takes shape):
 - [X] Add appropriate .gitignore file based on your language and IDE
 - [X] Add appropriate .gitattributes file based on the types of files expected in your project
-- [ ] Create basic version of app that runs in emulator
-- [ ] Create app's second "page" and link to first one
+- [X] Create basic version of app that runs in emulator
+- [X] Create app's second "page" and link to first one
 - [ ] Display results from remote data source
 - [ ] Deploy to actual device
 - [ ] Update README.md file
