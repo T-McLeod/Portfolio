@@ -1,8 +1,8 @@
 import React from 'react';
-import Projects from './Projects';
+import Projects from '../page-sections/Projects';
 import './Home.css';
 import headshot from '../assets/Tanner_McLeod_Headshot.jpg';
-import Contact from './Contact';
+import Contact from '../page-sections/Contact';
 
 const Home: React.FC = () => {
   return (

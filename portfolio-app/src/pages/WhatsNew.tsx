@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from './Post';
+import Post from '../components/Post';
 import './WhatsNew.css';
 
 const WhatsNew: React.FC = () => {
