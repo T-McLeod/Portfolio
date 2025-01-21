@@ -1,9 +1,9 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import Interests from './components/Interests';
+import Home from './pages/Home';
+import Interests from './pages/Interests';
 import Navbar from './components/Navbar';
-import WhatsNew from './components/WhatsNew';
+import WhatsNew from './pages/WhatsNew';
 
 function App() {
 
