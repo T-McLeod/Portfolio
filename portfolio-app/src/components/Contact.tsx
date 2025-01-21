@@ -6,10 +6,10 @@ const Contact: React.FC = () => {
     <div className="contact">
       <h2>Contact Me</h2>
       <ul>
-        <li><strong>Phone:</strong> (123) 456-7890</li>
-        <li><strong>Email:</strong> <a href="mailto:personal@example.com">personal@example.com</a></li>
-        <li><strong>School Email:</strong> <a href="mailto:school@example.edu">school@example.edu</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+        <li><strong>Phone:</strong> (704) 310-6151</li>
+        <li><strong>Email:</strong> <a href="mailto:TannerMcLeod21@gmail.com">TannerMcLeod21@gmail.com</a></li>
+        <li><strong>School Email:</strong> <a href="mailto:tanner.mcleod@duke.edu">tanner.mcleod@duke.edu</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tannermcleod21/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/tannermcleod21/</a></li>
       </ul>
     </div>
   );
