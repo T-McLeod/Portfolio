@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Project from '../components/Project';
 import './Projects.css';
 
+interface ProjectData {
+  title: string;
+  description: string;
+  link: string;
+}
+
 const Projects: React.FC = () => {
-  const projectList = [
-    {
-      title: 'Doordash Tracker',
-      description: 'Track offers given by doordash (from dasher perspective) and estimate the time required to complete trip. Intended to be used to calculate the most efficient offers to accept.',
-      link: 'https://github.com/T-McLeod/DoordashTracker'
-    },
-    {
-      title: 'Chess Project',
-      description: 'A Java app to play Chess locally on computer.',
-      link: 'https://github.com/T-McLeod/ChessProject'
-    },
-    // Add more projects as needed
-  ];
+  const [projects, setProjects] = useState<ProjectData[]>([]);
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:8000/api/projects/')
+      .then(response => response.json())
+      .then(data => setProjects(data))
+      .catch(error => console.error('Error fetching projects:', error));
+  }, []);
 
   return (
     <div className="projects">
       <h2>Projects</h2>
-      {projectList.map((project, index) => (
+      {projects.map((project, index) => (
         <Project
           key={index}
           title={project.title}
