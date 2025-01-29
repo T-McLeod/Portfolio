@@ -7,7 +7,6 @@ services:
       cd portfolio-app
       npm install
       npm run build
-    publishPath: /public
 
   - type: web
     name: django-backend
@@ -29,4 +28,4 @@ services:
       - key: SECRET_KEY
         value: your-secret-key
       - key: DEBUG
-        value: 'False'
+        value: 'True'
