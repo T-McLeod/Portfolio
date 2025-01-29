@@ -10,13 +10,14 @@ interface ProjectData {
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
+  const BASE_URL = 'https://portfolio-3rm0.onrender.com/api/'
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/projects/')
+    fetch(`${BASE_URL}/projects/`)
       .then(response => response.json())
       .then(data => setProjects(data))
       .catch(error => console.error('Error fetching projects:', error));
-  }, []);
+  }, [BASE_URL]);
 
   return (
     <div className="projects">
