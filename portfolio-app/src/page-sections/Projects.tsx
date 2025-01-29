@@ -10,7 +10,7 @@ interface ProjectData {
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
-  const BASE_URL = 'https://portfolio-3rm0.onrender.com/api/'
+  const BASE_URL = 'https://portfolio-3rm0.onrender.com/api'
 
   useEffect(() => {
     fetch(`${BASE_URL}/projects/`)

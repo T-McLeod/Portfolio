@@ -11,7 +11,7 @@ interface PostData {
 
 const WhatsNew: React.FC = () => {
   const [posts, setPosts] = useState<PostData[]>([]);
-  const BASE_URL = 'https://portfolio-3rm0.onrender.com/api/'
+  const BASE_URL = 'https://portfolio-3rm0.onrender.com/api'
 
   useEffect(() => {
     fetch(`${BASE_URL}/posts/`)
