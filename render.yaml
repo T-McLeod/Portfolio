@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: react-build
+    env: static
+    staticPublishPath: portfolio-app/build
+    buildCommand: |
+      cd portfolio-app
+      npm install
+      npm run build
+
+  - type: web
+    name: django-backend
+    env: python
+    buildCommand: |
+      cd database
+      pip install -r requirements.txt
+      cd ../portfolio-app
+      npm install
+      npm run build
+      cd ..
+      cp -r portfolio-app/build/* database/static/
+      cd database
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+      python manage.py populate_sample_data
+    startCommand: gunicorn database.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DEBUG
+        value: 'True'

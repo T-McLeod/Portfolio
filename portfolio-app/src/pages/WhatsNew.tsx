@@ -11,13 +11,14 @@ interface PostData {
 
 const WhatsNew: React.FC = () => {
   const [posts, setPosts] = useState<PostData[]>([]);
+  const BASE_URL = 'https://portfolio-3rm0.onrender.com/api'
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/posts/')
+    fetch(`${BASE_URL}/posts/`)
       .then(response => response.json())
       .then(data => setPosts(data))
       .catch(error => console.error('Error fetching posts:', error));
-  }, []);
+  }, [BASE_URL]);
 
   return (
     <div className="whats-new">
